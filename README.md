@@ -20,12 +20,12 @@
     - 执行超时时间：900 秒
     - 请求多并发：2 并发
 - 日志配置 -> 日志投递：启用
-- 函数代码：本地上传zip包（[点我下载 ZIP 包](https://github.com/Ice-Hazymoon/openai-scf-proxy/raw/master/openai-proxy.zip)）
+- 函数代码：本地上传zip包（[点我下载 ZIP 包](https://github.com/Ice-Hazymoon/openai-scf-proxy/releases/download/0.0.2/openai-proxy.zip)）
 
-之后点击“完成”按钮，进入【函数管理】，点击【函数配置】，往下拉，找到【访问路径】，这里就是你的代理地址，但需要把 "/release" 部分替换为 "/chat"
+之后点击“完成”按钮，进入【函数管理】，点击【函数配置】，往下拉，找到【访问路径】，这里就是你的代理地址，但需要把 "/release" 部分删除。
 
 例如：`https://service-aaaaa.hk.apigw.tencentcs.com/release/`
-需要替换为：`https://service-aaaaa.hk.apigw.tencentcs.com/chat/`
+需要替换为：`https://service-aaaaa.hk.apigw.tencentcs.com/`
 
 ## 如何使用
 

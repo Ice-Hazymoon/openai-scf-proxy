@@ -5,12 +5,9 @@ const {
 const app = express()
 const port = 9000
 
-app.use('/chat', createProxyMiddleware({
+app.use('/', createProxyMiddleware({
   target: 'https://api.openai.com',
   changeOrigin: true,
-  pathRewrite: {
-    '/chat': ''
-  }
 }));
 
 app.get('/', (req, res) => {
