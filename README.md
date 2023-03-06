@@ -1,3 +1,5 @@
+本教程不仅仅针对云函数，你也可以托管在自己的服务器上，或者 Azure 等平台，只要能运行 Node.js 程序即可，参加下方[【自托管】](#自托管)部分。
+
 # 猴子也能学会的腾讯云函数搭建 OpenAI 国内代理教程
 
 > 优势：免费！比 Cloudflare Worker 简单，支持香港等多地区可选，部署简单，一行代码都不用写，有 QQ、微信账号就能注册，猴子也能学会！
@@ -44,3 +46,12 @@
 点击右上角的🔑图标，在接口地址中输入这个地址，点击保存即可
 
 愉快的与 OpenAI 一起冲浪吧~
+
+## 自托管
+
+```
+git clone https://github.com/Ice-Hazymoon/openai-scf-proxy
+cd openai-scf-proxy
+npm install
+npm run start
+```
