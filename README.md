@@ -26,6 +26,7 @@
 之后点击“完成”按钮，进入【函数管理】，点击【函数配置】，往下拉，找到【访问路径】，这里就是你的代理地址，但需要把 "/release" 部分替换为 "/chat"
 
 例如：`https://service-aaaaa.hk.apigw.tencentcs.com/release/`
+
 需要替换为：`https://service-aaaaa.hk.apigw.tencentcs.com/chat/`
 
 ## 如何使用
