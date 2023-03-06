@@ -29,11 +29,11 @@
 - 日志配置 -> 日志投递：启用（可以选择不开，开的话一个月应该几分钱）
 - 函数代码：本地上传zip包（[点我下载 ZIP 包](https://github.com/Ice-Hazymoon/openai-scf-proxy/raw/master/openai-proxy.zip)）
 
-之后点击“完成”按钮，进入【函数管理】，点击【函数代码】，往下拉，找到【访问路径】，这里就是你的代理地址，但需要把 "/release" 部分替换为 "/chat"
+之后点击“完成”按钮，进入【函数管理】，点击【函数代码】，往下拉，找到【访问路径】，这里就是你的代理地址，但需要把 "/release" 部分删除
 
 例如：`https://service-aaaaa.hk.apigw.tencentcs.com/release/`
 
-需要替换为：`https://service-aaaaa.hk.apigw.tencentcs.com/chat/`
+改为：`https://service-aaaaa.hk.apigw.tencentcs.com/`
 
 ## 如何使用
 
