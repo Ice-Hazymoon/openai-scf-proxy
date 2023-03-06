@@ -1,6 +1,6 @@
 # 猴子也能学会的腾讯云函数搭建 OpenAI 国内代理教程
 
-> 优势：比 cloudflare worker 简单，支持香港等多地区可选，部署速度快，有 QQ、微信账号就能注册，猴子也能学会！
+> 优势：免费！比 Cloudflare Worker 简单，支持香港等多地区可选，部署简单，一行代码都不用写，有 QQ、微信账号就能注册，猴子也能学会！
 > 
 > 劣势：不支持 SSE，用户体验欠佳，但完全能用！
 
@@ -29,7 +29,7 @@
 - 日志配置 -> 日志投递：启用（可以选择不开，开的话一个月应该几分钱）
 - 函数代码：本地上传zip包（[点我下载 ZIP 包](https://github.com/Ice-Hazymoon/openai-scf-proxy/raw/master/openai-proxy.zip)）
 
-之后点击“完成”按钮，进入【函数管理】，点击【函数配置】，往下拉，找到【访问路径】，这里就是你的代理地址，但需要把 "/release" 部分替换为 "/chat"
+之后点击“完成”按钮，进入【函数管理】，点击【函数代码】，往下拉，找到【访问路径】，这里就是你的代理地址，但需要把 "/release" 部分替换为 "/chat"
 
 例如：`https://service-aaaaa.hk.apigw.tencentcs.com/release/`
 
