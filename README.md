@@ -51,6 +51,8 @@ PS：本教程不仅仅针对云函数，你也可以托管在自己的服务器
 
 ## 如何使用
 
+### 第三方项目
+
 你可以在任何支持配置 OpenAI 域名的软件中使用这个服务，例如在 CatGPT 中配置：
 
 进入：[https://ai.okmiku.com/](https://ai.okmiku.com/)
@@ -59,7 +61,8 @@ PS：本教程不仅仅针对云函数，你也可以托管在自己的服务器
 
 愉快的与 OpenAI 一起冲浪吧~
 
-使用openai官方Node.js库时，用以下方式指定：
+### OpenAI 官方 Node.js 库
+
 ```
 const configuration = new Configuration({
   apiKey: OPENAI_API_KEY,
