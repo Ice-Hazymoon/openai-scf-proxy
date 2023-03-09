@@ -59,6 +59,14 @@ PS：本教程不仅仅针对云函数，你也可以托管在自己的服务器
 
 愉快的与 OpenAI 一起冲浪吧~
 
+使用openai官方Node.js库时，用以下方式指定：
+```
+const configuration = new Configuration({
+  apiKey: OPENAI_API_KEY,
+  basePath: 'https://service-aaaaa.hk.apigw.tencentcs.com/v1'
+})
+```
+
 ## 自托管
 
 ```
