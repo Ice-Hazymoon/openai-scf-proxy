@@ -2,6 +2,12 @@
 > 
 > 如果大家需要使用代理，请选择一台美国地区，IP固定的的服务器按照下方的【自托管】部分自行搭建。
 
+<div style="font-size: 1.5rem;">
+  <a href="./README.md">腾讯云</a> |
+  <a href="./README-aliyun.md">阿里云</a>
+</div>
+</br>
+
 ***
 
 # 猴子也能学会的腾讯云函数搭建 OpenAI 国内代理教程
