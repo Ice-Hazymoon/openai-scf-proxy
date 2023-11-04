@@ -6,7 +6,7 @@ const app = express()
 const port = 9000
 
 app.use('/', createProxyMiddleware({
-  target: 'https://github.com/',
+  target: 'https://api.openai.com/',
   changeOrigin: true,
   onProxyReq: (proxyReq, req, res) => {
     // 移除 'x-forwarded-for' 和 'x-real-ip' 头，以确保不传递原始客户端 IP 地址等信息
@@ -18,7 +18,7 @@ app.use('/', createProxyMiddleware({
   }
 }));
 
-app.use('/google', createProxyMiddleware({
+app.use('/google/', createProxyMiddleware({
   target: 'https://google.com/',
   changeOrigin: true,
   onProxyReq: (proxyReq, req, res) => {
@@ -31,8 +31,8 @@ app.use('/google', createProxyMiddleware({
   }
 }));
 
-app.use('/openai', createProxyMiddleware({
-  target: 'https://api.openai.com/',
+app.use('/github/', createProxyMiddleware({
+  target: 'https://github.com/',
   changeOrigin: true,
   onProxyReq: (proxyReq, req, res) => {
     // 移除 'x-forwarded-for' 和 'x-real-ip' 头，以确保不传递原始客户端 IP 地址等信息
