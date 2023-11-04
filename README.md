@@ -90,3 +90,8 @@ cd openai-scf-proxy
 npm install
 npm run start
 ```
+
+## vercel
+
+已经部署到vercel，对应代理域名：
+https://openai-scf-proxy-eta.vercel.app/
